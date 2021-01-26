@@ -71,3 +71,13 @@ body {
         display: inline-block;
         width: 100%;
     }
+
+/* Column */
+.column {
+    grid-area: column;
+    padding-left: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+    .column--btn {padding: 1em;}
