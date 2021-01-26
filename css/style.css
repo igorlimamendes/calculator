@@ -54,3 +54,20 @@ body {
     align-items: center;
     justify-content: flex-end;
 }
+
+/* Rows */
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+    .row-one {grid-area: row-one;}
+    .row-two {grid-area: row-two;}
+    .row-three {grid-area: row-three;}
+    .row-four {grid-area: row-four;}
+    .row-five {grid-area: row-five;}
+
+    .row--btn {
+        display: inline-block;
+        width: 100%;
+    }
