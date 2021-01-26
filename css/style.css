@@ -39,3 +39,18 @@ body {
         "row-four row-four row-four column"
         "row-five row-five row-five column";
 }
+
+/* Display */
+.display {
+    grid-area: display;
+    background: var(--black);
+    color: var(--white);
+    width: 100%;
+    height: 5em;
+    margin-bottom: 1em;
+    padding: .5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
