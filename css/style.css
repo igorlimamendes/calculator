@@ -1,7 +1,5 @@
 /* General style */
-* {
-    box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
 :root {
     --white: #fff;
@@ -19,6 +17,25 @@ body {
     align-items: center;
     justify-content: center;
 }
-    button:hover {
-        cursor: pointer;
-    }
+    button:hover {cursor: pointer;}
+
+/* Wrapper */
+.wrapper {
+    border: .1em solid var(--black);
+    width: 20em;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: .5em;
+    font-size: 1.6em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "display display display display"
+        "row-one row-one row-one column"
+        "row-two row-two row-two column"
+        "row-three row-three row-three column"
+        "row-four row-four row-four column"
+        "row-five row-five row-five column";
+}
