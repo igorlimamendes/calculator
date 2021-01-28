@@ -70,6 +70,24 @@ document.addEventListener("DOMContentLoaded", () => {
                     populateDisplay(number2);
                 }
             }
+
+            // Select operator
+            if (buttonValue === "operator") {
+                if (number2.length > 0) { // Continue calculation with the result value
+                    result = operate(operator, number1, number2);
+                    number2 = "";
+                    number1 = result;
+                    
+                    populateDisplay(result);
+                    
+                    result = "";
+                    operator = button.getAttribute("id"); // Get name of operator
+                } else {
+                    operator = button.getAttribute("id"); // Get name of operator
+
+                    populateDisplay(button.innerHTML);
+                }
+            }
         });
     });
 });
