@@ -57,6 +57,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     populateDisplay(number2);
                 }
             }
+
+            // Integer to float number
+            if (buttonValue === "dot") {
+                if (operator.length === 0) { // First number to be select
+                    if (number1.indexOf(".") < 0) number1 += "."; // Check if number has more than one "." value
+                    
+                    populateDisplay(number1);
+                } else {
+                    if (number2.indexOf(".") < 0) number2 += "."; // Check if number has more than one "." value
+
+                    populateDisplay(number2);
+                }
+            }
         });
     });
 });
