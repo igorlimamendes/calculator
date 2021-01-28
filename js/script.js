@@ -88,6 +88,18 @@ document.addEventListener("DOMContentLoaded", () => {
                     populateDisplay(button.innerHTML);
                 }
             }
+
+            // Show result of calculation
+            if (buttonValue === "equals") {
+                if (result.length === 0) result = operate(operator, number1, number2); // Show result with first and second number
+                else result = operate(operator, result, number2); // Show result with result value and second number
+                
+                number1 = "";
+                operator = "";
+                number2 = "";
+
+                populateDisplay(result);
+            }
         });
     });
 });
