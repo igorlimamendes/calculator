@@ -130,4 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (buttonValue === "clear") clear();
         });
     });
+
+    populateDisplay("0"); // Show a "0" in display box
 });
