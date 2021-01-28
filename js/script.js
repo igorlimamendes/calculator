@@ -4,4 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const display = document.querySelector(".display");
     const buttons = document.querySelectorAll("button");
     let number1 = "", operator = "", number2 = "", result = "";
+
+    // Operate
+    function operate(operator, x, y) {
+        x = Number(x);
+        y = Number(y);
+
+        if (operator === "add") return x + y;
+        else if (operator === "subtract") return x - y;
+        else if (operator === "multiply") return x * y;
+        else return x / y;
+    }
 });
