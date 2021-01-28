@@ -43,6 +43,20 @@ document.addEventListener("DOMContentLoaded", () => {
     buttons.forEach((button) => {
         button.addEventListener("click", () => {
             const buttonValue = button.getAttribute("value");
+
+            // Select number
+            if (buttonValue === "number") {
+                if (operator.length === 0) { // First number to be select
+                    number1 += button.innerHTML;
+                    result = ""; // Backspace function (remove last caracter)
+
+                    populateDisplay(number1);
+                } else {
+                    number2 += button.innerHTML;
+
+                    populateDisplay(number2);
+                }
+            }
         });
     });
 });
