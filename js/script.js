@@ -28,4 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (display.innerHTML == "Infinity" || display.innerHTML == "NaN") clear(); // Fix "Infinity" or "NaN" final result
     }
+
+    // Clear
+    function clear() {
+        number1 = "";
+        operator = "";
+        number2 = "";
+        result = "";
+
+        populateDisplay("0");
+    }
 });
