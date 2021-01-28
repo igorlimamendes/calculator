@@ -100,6 +100,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 populateDisplay(result);
             }
+
+            // Remove last value selected
+            if (buttonValue === "backspace") {
+                if (operator.length === 0) { // Remove from first number
+                    number1 = number1.slice(0, -1);
+
+                    populateDisplay(number1);
+
+                    if (number1.length === 0) clear(); // Clear all if first number was totally removed
+                } 
+                
+                if (operator.length > 0 && number2.length === 0) { // Remove operator
+                    operator = "";
+
+                    if (operator.length === 0) populateDisplay(number1); // Operator was removed and calculation has returned to first number
+                } 
+                
+                if (operator.length > 0 && number2.length > 0) { // Remove from second number
+                    number2 = number2.slice(0, -1);
+
+                    populateDisplay(number2);
+
+                    if (number2.length === 0) populateDisplay(operator); // Second number was removed and calculation has returned to operator
+                }
+            }
         });
     });
 });
