@@ -125,6 +125,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (number2.length === 0) populateDisplay(operator); // Second number was removed and calculation has returned to operator
                 }
             }
+
+            // Clear all
+            if (buttonValue === "clear") clear();
         });
     });
 });
