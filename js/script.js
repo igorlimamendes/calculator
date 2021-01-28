@@ -38,4 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         populateDisplay("0");
     }
+
+    // Calculator
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const buttonValue = button.getAttribute("value");
+        });
+    });
 });
