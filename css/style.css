@@ -21,7 +21,15 @@ body {
     align-items: center;
     justify-content: center;
 }
-    button:hover {cursor: pointer;}
+    button {
+        border: .1em solid var(--buttonBorder);
+        background: none;
+        outline: none;
+        color: var(--generalText);
+        font-weight: bold;
+        border-bottom: transparent;
+    }    
+        button:hover {cursor: pointer;}
 
 /* Wrapper */
 .wrapper {
