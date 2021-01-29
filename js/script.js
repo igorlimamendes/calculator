@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Variables
     const display = document.querySelector(".display");
     const buttons = document.querySelectorAll("button");
-    let number1 = "", operator = "", number2 = "", result = "";
+    let number1 = "", operator = "", number2 = "", result = "", operatorRemove = "";
 
     // Operate
     function operate(operator, x, y) {
