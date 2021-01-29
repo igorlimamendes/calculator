@@ -29,7 +29,11 @@ body {
         font-weight: bold;
         border-bottom: transparent;
     }    
-        button:hover {cursor: pointer;}
+        button:hover {
+            cursor: pointer;
+            background: var(--buttonBorder);
+        }
+            .buttonClick:hover {background: var(--buttonClick);}
 
 /* Wrapper */
 .wrapper {
