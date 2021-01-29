@@ -117,6 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     operator = "";
 
                     if (operator.length === 0) populateDisplay(number1); // Operator was removed and calculation has returned to first number
+
+                    if (operator.length === 0 && result != "") populateDisplay(result); // Operator was removed and calculation has returned to result value
                 } 
                 
                 if (operator.length > 0 && number2.length > 0) { // Remove from second number
