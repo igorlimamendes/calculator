@@ -132,6 +132,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Clear all
             if (buttonValue === "clear") clear();
+
+            // Change button background on click
+            button.classList.add("buttonClick");
+
+            setTimeout(() => {button.classList.remove("buttonClick");}, 100);
         });
     });
 
