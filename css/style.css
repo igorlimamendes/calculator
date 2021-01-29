@@ -37,13 +37,14 @@ body {
 
 /* Wrapper */
 .wrapper {
-    border: .1em solid var(--black);
+    background: var(--wrapperBackground);
+    box-shadow: 0 .2em 1em var(--wrapperShadow);
     width: 20em;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: .5em;
     font-size: 1.6em;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
