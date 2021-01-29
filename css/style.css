@@ -97,4 +97,9 @@ body {
     flex-flow: column nowrap;
     justify-content: space-between;
 }
-    .column--btn {padding: 1em;}
+    .column--btn {
+        padding: 1.5em 1em;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        font-size: 1.1em;
+    }
