@@ -11,8 +11,8 @@
 }
 
 body {
-    background: var(--white);
-    color: var(--black);
+    background: var(--bodyBackground);
+    color: var(--generalText);
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
