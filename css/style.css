@@ -2,8 +2,12 @@
 * {box-sizing: border-box;}
 
 :root {
-    --white: #fff;
-    --black: #000;
+    --bodyBackground: #c2f7f7;
+    --generalText: #42dac5;
+    --buttonBorder: #333;
+    --buttonClick: #444;
+    --wrapperShadow: #666;
+    --wrapperBackground: #222;
 }
 
 body {
