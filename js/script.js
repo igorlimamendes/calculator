@@ -87,6 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     populateDisplay(button.innerHTML);
                 }
+
+                operatorRemove = button; // Get operator to use in remove (backspace) function
             }
 
             // Show result of calculation
