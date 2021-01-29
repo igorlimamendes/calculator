@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     populateDisplay(number2);
 
-                    if (number2.length === 0) populateDisplay(operator); // Second number was removed and calculation has returned to operator
+                    if (number2.length === 0) populateDisplay(operatorRemove.innerHTML); // Second number was removed and calculation has returned to operator
                 }
             }
 
