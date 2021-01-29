@@ -87,6 +87,7 @@ body {
     .row--btn {
         display: inline-block;
         width: 100%;
+        border-left-color: transparent;
     }
 
 /* Column */
